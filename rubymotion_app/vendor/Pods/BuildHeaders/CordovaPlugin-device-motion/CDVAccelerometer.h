@@ -1,0 +1,1 @@
+../../CordovaPlugin-device-motion/src/ios/CDVAccelerometer.h

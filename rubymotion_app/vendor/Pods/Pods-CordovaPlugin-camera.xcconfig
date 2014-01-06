@@ -1,0 +1,1 @@
+PODS_CORDOVAPLUGIN_CAMERA_OTHER_LDFLAGS = -framework AssetsLibrary -framework CoreGraphics -framework CoreLocation -framework MobileCoreServices -weak_framework ImageIO

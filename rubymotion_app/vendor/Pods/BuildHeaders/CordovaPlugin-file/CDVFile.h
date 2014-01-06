@@ -1,0 +1,1 @@
+../../CordovaPlugin-file/src/ios/CDVFile.h

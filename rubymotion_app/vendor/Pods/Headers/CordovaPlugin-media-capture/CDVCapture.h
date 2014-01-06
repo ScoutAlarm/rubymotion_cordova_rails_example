@@ -1,0 +1,1 @@
+../../CordovaPlugin-media-capture/src/ios/CDVCapture.h

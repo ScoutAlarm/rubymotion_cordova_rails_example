@@ -1,0 +1,1 @@
+../../CordovaPlugin-globalization/src/ios/CDVGlobalization.h

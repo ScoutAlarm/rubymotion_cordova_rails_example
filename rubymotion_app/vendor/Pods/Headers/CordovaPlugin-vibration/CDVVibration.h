@@ -1,0 +1,1 @@
+../../CordovaPlugin-vibration/src/ios/CDVVibration.h

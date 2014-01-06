@@ -1,0 +1,2782 @@
+<?xml version='1.0'?>
+<signatures version='1.0'>
+<constant name='CDVLocalNotification' type='@' const='true' declared_type='NSString*'/>
+<constant name='CDVPageDidLoadNotification' type='@' const='true' declared_type='NSString*'/>
+<constant name='CDVPluginHandleOpenURLNotification' type='@' const='true' declared_type='NSString*'/>
+<constant name='CDVPluginResetNotification' type='@' const='true' declared_type='NSString*'/>
+<constant name='DataTypeToWidth' type='[12i]' const='true' declared_type='int*'/>
+<constant name='RECURSE_HORIZON' type='i' const='true' declared_type='int'/>
+<constant name='kCDVAssetsLibraryPrefix' type='@' const='true' declared_type='NSString*'/>
+<constant name='kCDVDefaultWhitelistRejectionString' type='@' const='true' declared_type='NSString*'/>
+<constant name='kOptionsKeyCookie' type='@' const='true' declared_type='NSString*'/>
+<string_constant name='kCDVLocalStorageErrorDomain' nsstring='true' value='kCDVLocalStorageErrorDomain'/>
+<string_constant name='kReachabilityChangedNotification' nsstring='true' value='kNetworkReachabilityChangedNotification'/>
+<string_constant name='kW3ContactAddressFormatted' nsstring='true' value='formatted'/>
+<string_constant name='kW3ContactAddresses' nsstring='true' value='addresses'/>
+<string_constant name='kW3ContactBirthday' nsstring='true' value='birthday'/>
+<string_constant name='kW3ContactCategories' nsstring='true' value='categories'/>
+<string_constant name='kW3ContactCountry' nsstring='true' value='country'/>
+<string_constant name='kW3ContactDepartment' nsstring='true' value='department'/>
+<string_constant name='kW3ContactDisplayName' nsstring='true' value='displayName'/>
+<string_constant name='kW3ContactEmails' nsstring='true' value='emails'/>
+<string_constant name='kW3ContactFamilyName' nsstring='true' value='familyName'/>
+<string_constant name='kW3ContactFieldId' nsstring='true' value='id'/>
+<string_constant name='kW3ContactFieldPrimary' nsstring='true' value='pref'/>
+<string_constant name='kW3ContactFieldType' nsstring='true' value='type'/>
+<string_constant name='kW3ContactFieldValue' nsstring='true' value='value'/>
+<string_constant name='kW3ContactFormattedName' nsstring='true' value='formatted'/>
+<string_constant name='kW3ContactGivenName' nsstring='true' value='givenName'/>
+<string_constant name='kW3ContactHomeLabel' nsstring='true' value='home'/>
+<string_constant name='kW3ContactHonorificPrefix' nsstring='true' value='honorificPrefix'/>
+<string_constant name='kW3ContactHonorificSuffix' nsstring='true' value='honorificSuffix'/>
+<string_constant name='kW3ContactId' nsstring='true' value='id'/>
+<string_constant name='kW3ContactImAIMLabel' nsstring='true' value='aim'/>
+<string_constant name='kW3ContactImICQLabel' nsstring='true' value='icq'/>
+<string_constant name='kW3ContactImMSNLabel' nsstring='true' value='msn'/>
+<string_constant name='kW3ContactImType' nsstring='true' value='type'/>
+<string_constant name='kW3ContactImValue' nsstring='true' value='value'/>
+<string_constant name='kW3ContactImYahooLabel' nsstring='true' value='yahoo'/>
+<string_constant name='kW3ContactIms' nsstring='true' value='ims'/>
+<string_constant name='kW3ContactLocality' nsstring='true' value='locality'/>
+<string_constant name='kW3ContactMiddleName' nsstring='true' value='middleName'/>
+<string_constant name='kW3ContactName' nsstring='true' value='name'/>
+<string_constant name='kW3ContactNickname' nsstring='true' value='nickname'/>
+<string_constant name='kW3ContactNote' nsstring='true' value='note'/>
+<string_constant name='kW3ContactOrganizationName' nsstring='true' value='name'/>
+<string_constant name='kW3ContactOrganizations' nsstring='true' value='organizations'/>
+<string_constant name='kW3ContactOtherLabel' nsstring='true' value='other'/>
+<string_constant name='kW3ContactPhoneFaxLabel' nsstring='true' value='fax'/>
+<string_constant name='kW3ContactPhoneMobileLabel' nsstring='true' value='mobile'/>
+<string_constant name='kW3ContactPhoneNumbers' nsstring='true' value='phoneNumbers'/>
+<string_constant name='kW3ContactPhonePagerLabel' nsstring='true' value='pager'/>
+<string_constant name='kW3ContactPhotos' nsstring='true' value='photos'/>
+<string_constant name='kW3ContactPostalCode' nsstring='true' value='postalCode'/>
+<string_constant name='kW3ContactRegion' nsstring='true' value='region'/>
+<string_constant name='kW3ContactStreetAddress' nsstring='true' value='streetAddress'/>
+<string_constant name='kW3ContactTitle' nsstring='true' value='title'/>
+<string_constant name='kW3ContactUrlBlog' nsstring='true' value='blog'/>
+<string_constant name='kW3ContactUrlProfile' nsstring='true' value='profile'/>
+<string_constant name='kW3ContactUrls' nsstring='true' value='urls'/>
+<string_constant name='kW3ContactWorkLabel' nsstring='true' value='work'/>
+<string_constant name='kW3FilePersistent' nsstring='true' value='persistent'/>
+<string_constant name='kW3FileTemporary' nsstring='true' value='temporary'/>
+<enum name='ABORT_ERR' value='3'/>
+<enum name='CAPTURE_APPLICATION_BUSY' value='1'/>
+<enum name='CAPTURE_INTERNAL_ERR' value='0'/>
+<enum name='CAPTURE_INVALID_ARGUMENT' value='2'/>
+<enum name='CAPTURE_NOT_SUPPORTED' value='20'/>
+<enum name='CAPTURE_NO_MEDIA_FILES' value='3'/>
+<enum name='CDVCommandStatus_CLASS_NOT_FOUND_EXCEPTION' value='2'/>
+<enum name='CDVCommandStatus_ERROR' value='9'/>
+<enum name='CDVCommandStatus_ILLEGAL_ACCESS_EXCEPTION' value='3'/>
+<enum name='CDVCommandStatus_INSTANTIATION_EXCEPTION' value='4'/>
+<enum name='CDVCommandStatus_INVALID_ACTION' value='7'/>
+<enum name='CDVCommandStatus_IO_EXCEPTION' value='6'/>
+<enum name='CDVCommandStatus_JSON_EXCEPTION' value='8'/>
+<enum name='CDVCommandStatus_MALFORMED_URL_EXCEPTION' value='5'/>
+<enum name='CDVCommandStatus_NO_RESULT' value='0'/>
+<enum name='CDVCommandStatus_OK' value='1'/>
+<enum name='CDV_ENABLE_EXEC_LOGGING' value='0'/>
+<enum name='CDV_FORMATTING_ERROR' value='1'/>
+<enum name='CDV_FORMAT_FULL' value='3'/>
+<enum name='CDV_FORMAT_LONG' value='2'/>
+<enum name='CDV_FORMAT_MEDIUM' value='1'/>
+<enum name='CDV_FORMAT_SHORT' value='0'/>
+<enum name='CDV_PARSING_ERROR' value='2'/>
+<enum name='CDV_PATTERN_ERROR' value='3'/>
+<enum name='CDV_SELECTOR_DAYS' value='1'/>
+<enum name='CDV_SELECTOR_MONTHS' value='0'/>
+<enum name='CDV_TRANSFER_DOWNLOAD' value='2'/>
+<enum name='CDV_TRANSFER_UPLOAD' value='1'/>
+<enum name='CDV_UNKNOWN_ERROR' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_Cordova' value='3'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_battery_status' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_camera' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_console' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_contacts' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_device' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_device_motion' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_device_orientation' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_dialogs' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_file' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_file_transfer' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_geolocation' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_globalization' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_inappbrowser' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_media' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_media_capture' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_network_information' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_splashscreen' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_CordovaPlugin_vibration' value='0'/>
+<enum name='COCOAPODS_VERSION_MAJOR_Cordova_Base' value='3'/>
+<enum name='COCOAPODS_VERSION_MAJOR_Cordova_Plugins_File' value='3'/>
+<enum name='COCOAPODS_VERSION_MINOR_Cordova' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_battery_status' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_camera' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_console' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_contacts' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_device' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_device_motion' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_device_orientation' value='3'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_dialogs' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_file' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_file_transfer' value='3'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_geolocation' value='3'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_globalization' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_inappbrowser' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_media' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_media_capture' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_network_information' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_splashscreen' value='2'/>
+<enum name='COCOAPODS_VERSION_MINOR_CordovaPlugin_vibration' value='3'/>
+<enum name='COCOAPODS_VERSION_MINOR_Cordova_Base' value='1'/>
+<enum name='COCOAPODS_VERSION_MINOR_Cordova_Plugins_File' value='1'/>
+<enum name='COCOAPODS_VERSION_PATCH_Cordova' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_battery_status' value='3'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_camera' value='3'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_console' value='5'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_contacts' value='4'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_device' value='5'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_device_motion' value='2'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_device_orientation' value='1'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_dialogs' value='4'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_file' value='4'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_file_transfer' value='3'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_geolocation' value='2'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_globalization' value='4'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_inappbrowser' value='5'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_media' value='4'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_media_capture' value='3'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_network_information' value='3'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_splashscreen' value='5'/>
+<enum name='COCOAPODS_VERSION_PATCH_CordovaPlugin_vibration' value='3'/>
+<enum name='COCOAPODS_VERSION_PATCH_Cordova_Base' value='0'/>
+<enum name='COCOAPODS_VERSION_PATCH_Cordova_Plugins_File' value='0'/>
+<enum name='CONNECTION_ABORTED' value='4'/>
+<enum name='CONNECTION_ERR' value='3'/>
+<enum name='CORDOVA_VERSION_MIN_REQUIRED' value='30100'/>
+<enum name='DestinationTypeDataUrl' value='0'/>
+<enum name='DestinationTypeFileUri' value='1'/>
+<enum name='DestinationTypeNativeUri' value='2'/>
+<enum name='EDT_ASCII_STRING' value='2'/>
+<enum name='EDT_DOUBLEFLOAT' value='12'/>
+<enum name='EDT_SBYTE' value='6'/>
+<enum name='EDT_SINGLEFLOAT' value='11'/>
+<enum name='EDT_SLONG' value='9'/>
+<enum name='EDT_SRATIONAL' value='10'/>
+<enum name='EDT_SSHORT' value='8'/>
+<enum name='EDT_UBYTE' value='1'/>
+<enum name='EDT_ULONG' value='4'/>
+<enum name='EDT_UNDEFINED' value='7'/>
+<enum name='EDT_URATIONAL' value='5'/>
+<enum name='EDT_USHORT' value='3'/>
+<enum name='ENCODING_ERR' value='5'/>
+<enum name='EncodingTypeJPEG' value='0'/>
+<enum name='EncodingTypePNG' value='1'/>
+<enum name='FILE_NOT_FOUND_ERR' value='1'/>
+<enum name='HEADINGERROR' value='3'/>
+<enum name='HEADINGRUNNING' value='2'/>
+<enum name='HEADINGSTARTING' value='1'/>
+<enum name='HEADINGSTOPPED' value='0'/>
+<enum name='INVALID_ARGUMENT_ERROR' value='1'/>
+<enum name='INVALID_MODIFICATION_ERR' value='9'/>
+<enum name='INVALID_STATE_ERR' value='7'/>
+<enum name='INVALID_URL_ERR' value='2'/>
+<enum name='IO_ERROR' value='4'/>
+<enum name='MEDIA_DURATION' value='2'/>
+<enum name='MEDIA_ERROR' value='9'/>
+<enum name='MEDIA_ERR_ABORTED' value='1'/>
+<enum name='MEDIA_ERR_DECODE' value='3'/>
+<enum name='MEDIA_ERR_NETWORK' value='2'/>
+<enum name='MEDIA_ERR_NONE_SUPPORTED' value='4'/>
+<enum name='MEDIA_NONE' value='0'/>
+<enum name='MEDIA_PAUSED' value='3'/>
+<enum name='MEDIA_POSITION' value='3'/>
+<enum name='MEDIA_RUNNING' value='2'/>
+<enum name='MEDIA_STARTING' value='1'/>
+<enum name='MEDIA_STATE' value='1'/>
+<enum name='MEDIA_STOPPED' value='4'/>
+<enum name='MediaTypeAll' value='2'/>
+<enum name='MediaTypePicture' value='0'/>
+<enum name='MediaTypeVideo' value='1'/>
+<enum name='NOT_FOUND_ERR' value='1'/>
+<enum name='NOT_READABLE_ERR' value='4'/>
+<enum name='NOT_SUPPORTED_ERROR' value='5'/>
+<enum name='NO_ERROR' value='0'/>
+<enum name='NO_MODIFICATION_ALLOWED_ERR' value='6'/>
+<enum name='NotReachable' value='0'/>
+<enum name='PATH_EXISTS_ERR' value='12'/>
+<enum name='PENDING_OPERATION_ERROR' value='3'/>
+<enum name='PERMISSIONDENIED' value='1'/>
+<enum name='PERMISSION_DENIED_ERROR' value='20'/>
+<enum name='PERSISTENT' value='1'/>
+<enum name='POSITIONUNAVAILABLE' value='2'/>
+<enum name='QUOTA_EXCEEDED_ERR' value='10'/>
+<enum name='ReachableViaWWAN' value='1'/>
+<enum name='ReachableViaWiFi' value='2'/>
+<enum name='SECURITY_ERR' value='2'/>
+<enum name='SYNTAX_ERR' value='8'/>
+<enum name='TEMPORARY' value='0'/>
+<enum name='TIMEOUT' value='3'/>
+<enum name='TIMEOUT_ERROR' value='2'/>
+<enum name='TYPE_MISMATCH_ERR' value='11'/>
+<enum name='UNKNOWN_ERROR' value='0'/>
+<enum name='kCDVLocalStorageFileOperationError' value='1'/>
+<function name='CDVNewBase64Decode'>
+<arg name='inputBuffer' type='*' const='true' declared_type='char*'/>
+<arg name='length' type='L' type64='Q' declared_type='size_t'/>
+<arg name='outputLength' type='^I' type64='^Q' declared_type='size_t*'/>
+<retval type='^v' declared_type='void*'/>
+</function>
+<function name='CDVNewBase64Encode'>
+<arg name='inputBuffer' type='^v' const='true' declared_type='void*'/>
+<arg name='length' type='L' type64='Q' declared_type='size_t'/>
+<arg name='separateLines' type='B' declared_type='_Bool'/>
+<arg name='outputLength' type='^I' type64='^Q' declared_type='size_t*'/>
+<retval type='*' declared_type='char*'/>
+</function>
+<class name='CDVAccelerometer'>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='init'>
+<retval type='@' declared_type='CDVAccelerometer*'/>
+</method>
+<method selector='isRunning'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setCallbackId:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='start:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='stop:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVAddressBookAccessError'>
+<method selector='errorCode'>
+<retval type='I' type64='Q' declared_type='CDVContactError'/>
+</method>
+<method selector='initWithCode:'>
+<arg name='code' type='I' type64='Q' declared_type='CDVContactError' index='0'/>
+<retval type='@' declared_type='CDVAddressBookAccessError*'/>
+</method>
+<method selector='setErrorCode:'>
+<arg name='errorCode' type='I' type64='Q' declared_type='CDVContactError' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVAddressBookHelper'>
+<method selector='createAddressBook:'>
+<arg name='workerBlock' type='@?' function_pointer='true' declared_type='CDVAddressBookWorkerBlock' index='0'>
+<arg type='@' declared_type='ABAddressBookRef'/>
+<arg type='@' declared_type='CDVAddressBookAccessError*'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVAlertView'>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='setCallbackId:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVAudioFile'>
+<method selector='player'>
+<retval type='@' declared_type='CDVAudioPlayer*'/>
+</method>
+<method selector='recorder'>
+<retval type='@' declared_type='CDVAudioRecorder*'/>
+</method>
+<method selector='resourcePath'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='resourceURL'>
+<retval type='@' declared_type='NSURL*'/>
+</method>
+<method selector='setPlayer:'>
+<arg name='player' type='@' declared_type='CDVAudioPlayer*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setRecorder:'>
+<arg name='recorder' type='@' declared_type='CDVAudioRecorder*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setResourcePath:'>
+<arg name='resourcePath' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setResourceURL:'>
+<arg name='resourceURL' type='@' declared_type='NSURL*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setVolume:'>
+<arg name='volume' type='@' declared_type='NSNumber*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='volume'>
+<retval type='@' declared_type='NSNumber*'/>
+</method>
+</class>
+<class name='CDVAudioPlayer'>
+<method selector='mediaId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='setMediaId:'>
+<arg name='mediaId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVAudioRecorder'>
+<method selector='mediaId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='setMediaId:'>
+<arg name='mediaId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVAudioRecorderViewController'>
+<method selector='avRecorder'>
+<retval type='@' declared_type='AVAudioRecorder*'/>
+</method>
+<method selector='avSession'>
+<retval type='@' declared_type='AVAudioSession*'/>
+</method>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='captureCommand'>
+<retval type='@' declared_type='CDVCapture*'/>
+</method>
+<method selector='dismissAudioView:'>
+<arg name='sender' type='@' declared_type='id' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='doneButton'>
+<retval type='@' declared_type='UIBarButtonItem*'/>
+</method>
+<method selector='duration'>
+<retval type='@' declared_type='NSNumber*'/>
+</method>
+<method selector='errorCode'>
+<retval type='I' type64='Q' declared_type='CDVCaptureError'/>
+</method>
+<method selector='formatTime:'>
+<arg name='interval' type='i' declared_type='int' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='initWithCommand:duration:callbackId:'>
+<arg name='theCommand' type='@' declared_type='CDVPlugin*' index='0'/>
+<arg name='theDuration' type='@' declared_type='NSNumber*' index='1'/>
+<arg name='theCallbackId' type='@' declared_type='NSString*' index='2'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='isTimed'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='pluginResult'>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method selector='processButton:'>
+<arg name='sender' type='@' declared_type='id' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='recordButton'>
+<retval type='@' declared_type='UIButton*'/>
+</method>
+<method selector='recordImage'>
+<retval type='@' declared_type='UIImage*'/>
+</method>
+<method selector='recordingView'>
+<retval type='@' declared_type='UIView*'/>
+</method>
+<method selector='setAvRecorder:'>
+<arg name='avRecorder' type='@' declared_type='AVAudioRecorder*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setAvSession:'>
+<arg name='avSession' type='@' declared_type='AVAudioSession*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCallbackId:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCaptureCommand:'>
+<arg name='captureCommand' type='@' declared_type='CDVCapture*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDoneButton:'>
+<arg name='doneButton' type='@' declared_type='UIBarButtonItem*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDuration:'>
+<arg name='duration' type='@' declared_type='NSNumber*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setErrorCode:'>
+<arg name='errorCode' type='I' type64='Q' declared_type='CDVCaptureError' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setIsTimed:'>
+<arg name='isTimed' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPluginResult:'>
+<arg name='pluginResult' type='@' declared_type='CDVPluginResult*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setRecordButton:'>
+<arg name='recordButton' type='@' declared_type='UIButton*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setRecordImage:'>
+<arg name='recordImage' type='@' declared_type='UIImage*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setRecordingView:'>
+<arg name='recordingView' type='@' declared_type='UIView*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setStopRecordImage:'>
+<arg name='stopRecordImage' type='@' declared_type='UIImage*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTimer:'>
+<arg name='timer' type='@' declared_type='NSTimer*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTimerLabel:'>
+<arg name='timerLabel' type='@' declared_type='UILabel*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='stopRecordImage'>
+<retval type='@' declared_type='UIImage*'/>
+</method>
+<method selector='stopRecordingCleanup'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='timer'>
+<retval type='@' declared_type='NSTimer*'/>
+</method>
+<method selector='timerLabel'>
+<retval type='@' declared_type='UILabel*'/>
+</method>
+<method selector='updateTime'>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVBackupInfo'>
+<method selector='backup'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='label'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='original'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='setBackup:'>
+<arg name='backup' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLabel:'>
+<arg name='label' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setOriginal:'>
+<arg name='original' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='shouldBackup'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='shouldRestore'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+</class>
+<class name='CDVBattery'>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='dealloc'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getBatteryStatus'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='isPlugged'>
+<retval type='B' declared_type='_Bool'/>
+</method>
+<method selector='level'>
+<retval type='f' declared_type='float'/>
+</method>
+<method selector='setCallbackId:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setIsPlugged:'>
+<arg name='isPlugged' type='B' declared_type='_Bool' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLevel:'>
+<arg name='level' type='f' declared_type='float' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setState:'>
+<arg name='state' type='i' type64='q' declared_type='UIDeviceBatteryState' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='start:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='state'>
+<retval type='i' type64='q' declared_type='UIDeviceBatteryState'/>
+</method>
+<method selector='stop:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='updateBatteryStatus:'>
+<arg name='notification' type='@' declared_type='NSNotification*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVCamera'>
+<method selector='cleanup:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='data'>
+<retval type='@' declared_type='NSData*'/>
+</method>
+<method selector='imageByScalingAndCroppingForSize:toSize:'>
+<arg name='anImage' type='@' declared_type='UIImage*' index='0'/>
+<arg name='targetSize' type='{CGSize=ff}' type64='{CGSize=dd}' declared_type='CGSize' index='1'/>
+<retval type='@' declared_type='UIImage*'/>
+</method>
+<method selector='imageByScalingNotCroppingForSize:toSize:'>
+<arg name='anImage' type='@' declared_type='UIImage*' index='0'/>
+<arg name='frameSize' type='{CGSize=ff}' type64='{CGSize=dd}' declared_type='CGSize' index='1'/>
+<retval type='@' declared_type='UIImage*'/>
+</method>
+<method selector='imageCorrectedForCaptureOrientation:'>
+<arg name='anImage' type='@' declared_type='UIImage*' index='0'/>
+<retval type='@' declared_type='UIImage*'/>
+</method>
+<method selector='imagePickerController:didFinishPickingImage:editingInfo:'>
+<arg name='picker' type='@' declared_type='UIImagePickerController*' index='0'/>
+<arg name='image' type='@' declared_type='UIImage*' index='1'/>
+<arg name='editingInfo' type='@' declared_type='NSDictionary*' index='2'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='imagePickerController:didFinishPickingMediaWithInfo:'>
+<arg name='picker' type='@' declared_type='UIImagePickerController*' index='0'/>
+<arg name='info' type='@' declared_type='NSDictionary*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='imagePickerControllerDidCancel:'>
+<arg name='picker' type='@' declared_type='UIImagePickerController*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='locationManager'>
+<retval type='@' declared_type='CLLocationManager*'/>
+</method>
+<method selector='locationManager:didFailWithError:'>
+<arg name='manager' type='@' declared_type='CLLocationManager*' index='0'/>
+<arg name='error' type='@' declared_type='NSError*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='locationManager:didUpdateToLocation:fromLocation:'>
+<arg name='manager' type='@' declared_type='CLLocationManager*' index='0'/>
+<arg name='newLocation' type='@' declared_type='CLLocation*' index='1'/>
+<arg name='oldLocation' type='@' declared_type='CLLocation*' index='2'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='metadata'>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='navigationController:willShowViewController:animated:'>
+<arg name='navigationController' type='@' declared_type='UINavigationController*' index='0'/>
+<arg name='viewController' type='@' declared_type='UIViewController*' index='1'/>
+<arg name='animated' type='B' declared_type='BOOL' index='2'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='pickerController'>
+<retval type='@' declared_type='CDVCameraPicker*'/>
+</method>
+<method selector='postImage:withFilename:toUrl:'>
+<arg name='anImage' type='@' declared_type='UIImage*' index='0'/>
+<arg name='filename' type='@' declared_type='NSString*' index='1'/>
+<arg name='url' type='@' declared_type='NSURL*' index='2'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='repositionPopover:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setData:'>
+<arg name='data' type='@' declared_type='NSData*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLocationManager:'>
+<arg name='locationManager' type='@' declared_type='CLLocationManager*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMetadata:'>
+<arg name='metadata' type='@' declared_type='NSMutableDictionary*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPickerController:'>
+<arg name='pickerController' type='@' declared_type='CDVCameraPicker*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='takePicture:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVCameraPicker'>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='correctOrientation'>
+<retval type='B' declared_type='_Bool'/>
+</method>
+<method selector='cropToSize'>
+<retval type='B' declared_type='_Bool'/>
+</method>
+<method selector='encodingType'>
+<retval type='i' declared_type='enum CDVEncodingType'/>
+</method>
+<method selector='popoverController'>
+<retval type='@' declared_type='UIPopoverController*'/>
+</method>
+<method selector='popoverSupported'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='postUrl'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='quality'>
+<retval type='i' type64='q' declared_type='NSInteger'/>
+</method>
+<method selector='returnType'>
+<retval type='i' declared_type='enum CDVDestinationType'/>
+</method>
+<method selector='saveToPhotoAlbum'>
+<retval type='B' declared_type='_Bool'/>
+</method>
+<method selector='setCallbackId:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCorrectOrientation:'>
+<arg name='correctOrientation' type='B' declared_type='_Bool' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCropToSize:'>
+<arg name='cropToSize' type='B' declared_type='_Bool' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setEncodingType:'>
+<arg name='encodingType' type='i' declared_type='enum CDVEncodingType' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPopoverController:'>
+<arg name='popoverController' type='@' declared_type='UIPopoverController*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPopoverSupported:'>
+<arg name='popoverSupported' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPostUrl:'>
+<arg name='postUrl' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setQuality:'>
+<arg name='quality' type='i' type64='q' declared_type='NSInteger' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setReturnType:'>
+<arg name='returnType' type='i' declared_type='enum CDVDestinationType' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSaveToPhotoAlbum:'>
+<arg name='saveToPhotoAlbum' type='B' declared_type='_Bool' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTargetSize:'>
+<arg name='targetSize' type='{CGSize=ff}' type64='{CGSize=dd}' declared_type='CGSize' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setWebView:'>
+<arg name='webView' type='@' declared_type='UIWebView*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='targetSize'>
+<retval type='{CGSize=ff}' type64='{CGSize=dd}' declared_type='CGSize'/>
+</method>
+<method selector='webView'>
+<retval type='@' declared_type='UIWebView*'/>
+</method>
+</class>
+<class name='CDVCapture'>
+<method selector='captureAudio:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='captureImage:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='captureVideo:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getFormatData:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getMediaDictionaryFromPath:ofType:'>
+<arg name='fullPath' type='@' declared_type='NSString*' index='0'/>
+<arg name='type' type='@' declared_type='NSString*' index='1'/>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='getMediaModes:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='imagePickerController:didFinishPickingImage:editingInfo:'>
+<arg name='picker' type='@' declared_type='UIImagePickerController*' index='0'/>
+<arg name='image' type='@' declared_type='UIImage*' index='1'/>
+<arg name='editingInfo' type='@' declared_type='NSDictionary*' index='2'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='imagePickerController:didFinishPickingMediaWithInfo:'>
+<arg name='picker' type='@' declared_type='UIImagePickerController*' index='0'/>
+<arg name='info' type='@' declared_type='NSDictionary*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='imagePickerControllerDidCancel:'>
+<arg name='picker' type='@' declared_type='UIImagePickerController*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='inUse'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='processImage:type:forCallbackId:'>
+<arg name='image' type='@' declared_type='UIImage*' index='0'/>
+<arg name='mimeType' type='@' declared_type='NSString*' index='1'/>
+<arg name='callbackId' type='@' declared_type='NSString*' index='2'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method selector='processVideo:forCallbackId:'>
+<arg name='moviePath' type='@' declared_type='NSString*' index='0'/>
+<arg name='callbackId' type='@' declared_type='NSString*' index='1'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method selector='setInUse:'>
+<arg name='inUse' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVCommandDelegateImpl'>
+<method selector='initWithViewController:'>
+<arg name='viewController' type='@' declared_type='CDVViewController*' index='0'/>
+<retval type='@' declared_type='id'/>
+</method>
+</class>
+<class name='CDVCommandQueue'>
+<method selector='currentlyExecuting'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='dispose'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='enqueCommandBatch:'>
+<arg name='batchJSON' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='execute:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='executePending'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='fetchCommandsFromJs'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='initWithViewController:'>
+<arg name='viewController' type='@' declared_type='CDVViewController*' index='0'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='maybeFetchCommandsFromJs:'>
+<arg name='requestId' type='@' declared_type='NSNumber*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='resetRequestId'>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVCompass'>
+<method selector='getHeading:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='hasHeadingSupport'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='headingData'>
+<retval type='@' declared_type='CDVHeadingData*'/>
+</method>
+<method selector='locationManager'>
+<retval type='@' declared_type='CLLocationManager*'/>
+</method>
+<method selector='locationManager:didFailWithError:'>
+<arg name='manager' type='@' declared_type='CLLocationManager*' index='0'/>
+<arg name='error' type='@' declared_type='NSError*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='locationManager:didUpdateHeading:'>
+<arg name='manager' type='@' declared_type='CLLocationManager*' index='0'/>
+<arg name='heading' type='@' declared_type='CLHeading*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='locationManagerShouldDisplayHeadingCalibration:'>
+<arg name='manager' type='@' declared_type='CLLocationManager*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='returnHeadingInfo:keepCallback:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<arg name='bRetain' type='B' declared_type='BOOL' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setHeadingData:'>
+<arg name='headingData' type='@' declared_type='CDVHeadingData*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLocationManager:'>
+<arg name='locationManager' type='@' declared_type='CLLocationManager*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='startHeadingWithFilter:'>
+<arg name='filter' type='d' declared_type='CLLocationDegrees' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='stopHeading:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='watchHeadingFilter:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVConfigParser'>
+<method selector='pluginsDict'>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='settings'>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='startPage'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='startupPluginNames'>
+<retval type='@' declared_type='NSMutableArray*'/>
+</method>
+<method selector='whitelistHosts'>
+<retval type='@' declared_type='NSMutableArray*'/>
+</method>
+</class>
+<class name='CDVConnection'>
+<method selector='connectionType'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='internetReach'>
+<retval type='@' declared_type='CDVReachability*'/>
+</method>
+<method selector='setConnectionType:'>
+<arg name='connectionType' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setInternetReach:'>
+<arg name='internetReach' type='@' declared_type='CDVReachability*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVContact'>
+<method selector='allocDictMultiValueFromArray:forProperty:'>
+<arg name='array' type='@' declared_type='id' index='0'/>
+<arg name='prop' type='i' declared_type='ABPropertyID' index='1'/>
+<retval type='@' declared_type='ABMultiValueRef'/>
+</method>
+<method selector='allocStringMultiValueFromArray:'>
+<arg name='array' type='@' declared_type='id' index='0'/>
+<retval type='@' declared_type='ABMultiValueRef'/>
+</method>
+<method class_method='true' selector='calcReturnFields:'>
+<arg name='fields' type='@' declared_type='NSArray*' index='0'/>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method class_method='true' selector='convertContactTypeToPropertyLabel:'>
+<arg name='label' type='@' declared_type='NSString*' index='0'/>
+<retval type='^{__CFString=}' declared_type='CFStringRef'/>
+</method>
+<method class_method='true' selector='convertPropertyLabelToContactType:'>
+<arg name='label' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='defaultABtoW3C'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method class_method='true' selector='defaultFields'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method class_method='true' selector='defaultObjectAndProperties'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method class_method='true' selector='defaultW3CtoAB'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method class_method='true' selector='defaultW3CtoNull'>
+<retval type='@' declared_type='NSSet*'/>
+</method>
+<method selector='extractAddresses'>
+<retval type='@' declared_type='NSObject*'/>
+</method>
+<method selector='extractIms'>
+<retval type='@' declared_type='NSObject*'/>
+</method>
+<method selector='extractMultiValue:'>
+<arg name='propertyId' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSObject*'/>
+</method>
+<method selector='extractName'>
+<retval type='@' declared_type='NSObject*'/>
+</method>
+<method selector='extractOrganizations'>
+<retval type='@' declared_type='NSObject*'/>
+</method>
+<method selector='extractPhotos'>
+<retval type='@' declared_type='NSObject*'/>
+</method>
+<method selector='foundValue:inFields:'>
+<arg name='testValue' type='@' declared_type='NSString*' index='0'/>
+<arg name='searchFields' type='@' declared_type='NSDictionary*' index='1'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='getDateAsNumber:'>
+<arg name='datePropId' type='i' declared_type='ABPropertyID' index='0'/>
+<retval type='@' declared_type='NSNumber*'/>
+</method>
+<method selector='init'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='initFromABRecord:'>
+<arg name='aRecord' type='@' declared_type='ABRecordRef' index='0'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method class_method='true' selector='isValidW3ContactType:'>
+<arg name='label' type='@' declared_type='NSString*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='labelsForProperty:inRecord:'>
+<arg name='propId' type='i' declared_type='ABPropertyID' index='0'/>
+<arg name='aRecord' type='@' declared_type='ABRecordRef' index='1'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method class_method='true' selector='needsConversion:'>
+<arg name='W3Label' type='@' declared_type='NSString*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='record'>
+<retval type='@' declared_type='ABRecordRef'/>
+</method>
+<method selector='returnFields'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='searchContactFields:forMVDictionaryProperty:withValue:'>
+<arg name='fields' type='@' declared_type='NSArray*' index='0'/>
+<arg name='propId' type='i' declared_type='ABPropertyID' index='1'/>
+<arg name='testValue' type='@' declared_type='NSString*' index='2'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='searchContactFields:forMVStringProperty:withValue:'>
+<arg name='fields' type='@' declared_type='NSArray*' index='0'/>
+<arg name='propId' type='i' declared_type='ABPropertyID' index='1'/>
+<arg name='testValue' type='@' declared_type='id' index='2'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setFromContactDict:asUpdate:'>
+<arg name='aContact' type='@' declared_type='NSDictionary*' index='0'/>
+<arg name='bUpdate' type='B' declared_type='BOOL' index='1'/>
+<retval type='B' declared_type='_Bool'/>
+</method>
+<method selector='setMultiValueDictionary:forProperty:inRecord:asUpdate:'>
+<arg name='array' type='@' declared_type='NSArray*' index='0'/>
+<arg name='prop' type='i' declared_type='ABPropertyID' index='1'/>
+<arg name='person' type='@' declared_type='ABRecordRef' index='2'/>
+<arg name='bUpdate' type='B' declared_type='BOOL' index='3'/>
+<retval type='B' declared_type='_Bool'/>
+</method>
+<method selector='setMultiValueStrings:forProperty:inRecord:asUpdate:'>
+<arg name='fieldArray' type='@' declared_type='NSArray*' index='0'/>
+<arg name='prop' type='i' declared_type='ABPropertyID' index='1'/>
+<arg name='person' type='@' declared_type='ABRecordRef' index='2'/>
+<arg name='bUpdate' type='B' declared_type='BOOL' index='3'/>
+<retval type='B' declared_type='_Bool'/>
+</method>
+<method selector='setRecord:'>
+<arg name='record' type='@' declared_type='ABRecordRef' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setReturnFields:'>
+<arg name='returnFields' type='@' declared_type='NSDictionary*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setValue:forProperty:inRecord:asUpdate:'>
+<arg name='aValue' type='@' declared_type='id' index='0'/>
+<arg name='aProperty' type='i' declared_type='ABPropertyID' index='1'/>
+<arg name='aRecord' type='@' declared_type='ABRecordRef' index='2'/>
+<arg name='bUpdate' type='B' declared_type='BOOL' index='3'/>
+<retval type='B' declared_type='_Bool'/>
+</method>
+<method selector='testDateValue:forW3CProperty:'>
+<arg name='testValue' type='@' declared_type='NSString*' index='0'/>
+<arg name='property' type='@' declared_type='NSString*' index='1'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='testMultiValueStrings:forProperty:ofType:'>
+<arg name='testValue' type='@' declared_type='NSString*' index='0'/>
+<arg name='propId' type='i' declared_type='ABPropertyID' index='1'/>
+<arg name='type' type='@' declared_type='NSString*' index='2'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='testStringValue:forW3CProperty:'>
+<arg name='testValue' type='@' declared_type='NSString*' index='0'/>
+<arg name='property' type='@' declared_type='NSString*' index='1'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='toDictionary:'>
+<arg name='withFields' type='@' declared_type='NSDictionary*' index='0'/>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='translateW3Dict:forProperty:'>
+<arg name='dict' type='@' declared_type='NSDictionary*' index='0'/>
+<arg name='prop' type='i' declared_type='ABPropertyID' index='1'/>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='valuesForProperty:inRecord:'>
+<arg name='propId' type='i' declared_type='ABPropertyID' index='0'/>
+<arg name='aRecord' type='@' declared_type='ABRecordRef' index='1'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+</class>
+<class name='CDVContacts'>
+<method selector='chooseContact:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='displayContact:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='newContact:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='newPersonViewController:didCompleteWithNewPerson:'>
+<arg name='newPersonViewController' type='@' declared_type='ABNewPersonViewController*' index='0'/>
+<arg name='person' type='@' declared_type='ABRecordRef' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='personViewController:shouldPerformDefaultActionForPerson:property:identifier:'>
+<arg name='personViewController' type='@' declared_type='ABPersonViewController*' index='0'/>
+<arg name='person' type='@' declared_type='ABRecordRef' index='1'/>
+<arg name='property' type='i' declared_type='ABPropertyID' index='2'/>
+<arg name='identifierForValue' type='i' declared_type='ABMultiValueIdentifier' index='3'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='remove:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='save:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='search:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVContactsPicker'>
+<method selector='allowsEditing'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='options'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='pickedContactDictionary'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='setAllowsEditing:'>
+<arg name='allowsEditing' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCallbackId:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setOptions:'>
+<arg name='options' type='@' declared_type='NSDictionary*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPickedContactDictionary:'>
+<arg name='pickedContactDictionary' type='@' declared_type='NSDictionary*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVDevice'>
+<method class_method='true' selector='cordovaVersion'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='getDeviceInfo:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVDisplayContactViewController'>
+<method selector='contactsPlugin'>
+<retval type='@' declared_type='CDVPlugin*'/>
+</method>
+<method selector='setContactsPlugin:'>
+<arg name='contactsPlugin' type='@' declared_type='CDVPlugin*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVFile'>
+<method selector='appDocsPath'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='appLibraryPath'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='appTempPath'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='canCopyMoveSrc:ToDestination:'>
+<arg name='src' type='@' declared_type='NSString*' index='0'/>
+<arg name='dest' type='@' declared_type='NSString*' index='1'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='checkFreeDiskSpace:'>
+<arg name='appPath' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSNumber*'/>
+</method>
+<method selector='copyTo:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='doCopyMove:isCopy:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<arg name='bCopy' type='B' declared_type='BOOL' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='doRemove:'>
+<arg name='fullPath' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method selector='getAppPath:'>
+<arg name='pathFragment' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='getDirectory:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getDirectoryEntry:isDirectory:'>
+<arg name='fullPath' type='@' declared_type='NSString*' index='0'/>
+<arg name='isDir' type='B' declared_type='BOOL' index='1'/>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='getFile:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getFileMetadata:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getFreeDiskSpace:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getMetadata:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getMimeTypeFromPath:'>
+<arg name='fullPath' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='getParent:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='moveTo:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='persistentPath'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='readAsArrayBuffer:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='readAsDataURL:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='readAsText:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='readEntries:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='remove:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='removeRecursively:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='requestFileSystem:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='resolveLocalFileSystemURI:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setAppDocsPath:'>
+<arg name='appDocsPath' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setAppLibraryPath:'>
+<arg name='appLibraryPath' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setAppTempPath:'>
+<arg name='appTempPath' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPersistentPath:'>
+<arg name='persistentPath' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTemporaryPath:'>
+<arg name='temporaryPath' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setUserHasAllowed:'>
+<arg name='userHasAllowed' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='temporaryPath'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='testDirectoryExists:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='testFileExists:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='truncate:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='truncateFile:atPosition:'>
+<arg name='filePath' type='@' declared_type='NSString*' index='0'/>
+<arg name='pos' type='Q' declared_type='unsigned long long' index='1'/>
+<retval type='Q' declared_type='unsigned long long'/>
+</method>
+<method selector='userHasAllowed'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='write:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='writeToFile:withData:append:callback:'>
+<arg name='fileName' type='@' declared_type='NSString*' index='0'/>
+<arg name='data' type='@' declared_type='NSData*' index='1'/>
+<arg name='shouldAppend' type='B' declared_type='BOOL' index='2'/>
+<arg name='callbackId' type='@' declared_type='NSString*' index='3'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='writeToFile:withString:encoding:append:callback:'>
+<arg name='fileName' type='@' declared_type='NSString*' index='0'/>
+<arg name='data' type='@' declared_type='NSString*' index='1'/>
+<arg name='encoding' type='I' type64='Q' declared_type='NSStringEncoding' index='2'/>
+<arg name='shouldAppend' type='B' declared_type='BOOL' index='3'/>
+<arg name='callbackId' type='@' declared_type='NSString*' index='4'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVFileTransfer'>
+<method selector='activeTransfers'>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='backgroundTaskID'>
+<retval type='I' type64='Q' declared_type='UIBackgroundTaskIdentifier'/>
+</method>
+<method selector='createFileTransferError:AndSource:AndTarget:'>
+<arg name='code' type='i' declared_type='int' index='0'/>
+<arg name='source' type='@' declared_type='NSString*' index='1'/>
+<arg name='target' type='@' declared_type='NSString*' index='2'/>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='createFileTransferError:AndSource:AndTarget:AndHttpStatus:AndBody:'>
+<arg name='code' type='i' declared_type='int' index='0'/>
+<arg name='source' type='@' declared_type='NSString*' index='1'/>
+<arg name='target' type='@' declared_type='NSString*' index='2'/>
+<arg name='httpStatus' type='i' declared_type='int' index='3'/>
+<arg name='body' type='@' declared_type='NSString*' index='4'/>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='download:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='escapePathComponentForUrlString:'>
+<arg name='urlString' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='requestForUploadCommand:fileData:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<arg name='fileData' type='@' declared_type='NSData*' index='1'/>
+<retval type='@' declared_type='NSURLRequest*'/>
+</method>
+<method selector='setBackgroundTaskID:'>
+<arg name='backgroundTaskID' type='I' type64='Q' declared_type='UIBackgroundTaskIdentifier' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='upload:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVFileTransferDelegate'>
+<method selector='bytesExpected'>
+<retval type='q' declared_type='long long'/>
+</method>
+<method selector='bytesTransfered'>
+<retval type='q' declared_type='long long'/>
+</method>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='cancelTransfer:'>
+<arg name='connection' type='@' declared_type='NSURLConnection*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='command'>
+<retval type='@' declared_type='CDVFileTransfer*'/>
+</method>
+<method selector='connection'>
+<retval type='@' declared_type='NSURLConnection*'/>
+</method>
+<method selector='direction'>
+<retval type='i' declared_type='CDVFileTransferDirection'/>
+</method>
+<method selector='entityLengthRequest'>
+<retval type='@' declared_type='CDVFileTransferEntityLengthRequest*'/>
+</method>
+<method selector='mimeType'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='objectId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='responseCode'>
+<retval type='i' declared_type='int'/>
+</method>
+<method selector='responseData'>
+<retval type='@' declared_type='NSMutableData*'/>
+</method>
+<method selector='setBytesExpected:'>
+<arg name='bytesExpected' type='q' declared_type='long long' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setBytesTransfered:'>
+<arg name='bytesTransfered' type='q' declared_type='long long' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCallbackId:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCommand:'>
+<arg name='command' type='@' declared_type='CDVFileTransfer*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setConnection:'>
+<arg name='connection' type='@' declared_type='NSURLConnection*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setDirection:'>
+<arg name='direction' type='i' declared_type='CDVFileTransferDirection' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setEntityLengthRequest:'>
+<arg name='entityLengthRequest' type='@' declared_type='CDVFileTransferEntityLengthRequest*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMimeType:'>
+<arg name='mimeType' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setObjectId:'>
+<arg name='objectId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setResponseCode:'>
+<arg name='responseCode' type='i' declared_type='int' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setResponseData:'>
+<arg name='responseData' type='@' declared_type='NSMutableData*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSource:'>
+<arg name='source' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTarget:'>
+<arg name='target' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTargetFileHandle:'>
+<arg name='targetFileHandle' type='@' declared_type='NSFileHandle*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTrustAllHosts:'>
+<arg name='trustAllHosts' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='source'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='target'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='targetFileHandle'>
+<retval type='@' declared_type='NSFileHandle*'/>
+</method>
+<method selector='trustAllHosts'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='updateBytesExpected:'>
+<arg name='newBytesExpected' type='q' declared_type='long long' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVGlobalization'>
+<method selector='dateToString:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getCurrencyPattern:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getDateNames:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getDatePattern:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getFirstDayOfWeek:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getLocaleName:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getNumberPattern:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getPreferredLanguage:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='isDayLightSavingsTime:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='numberToString:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='stringToDate:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='stringToNumber:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVHeadingData'>
+<method selector='headingCallbacks'>
+<retval type='@' declared_type='NSMutableArray*'/>
+</method>
+<method selector='headingFilter'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='headingInfo'>
+<retval type='@' declared_type='CLHeading*'/>
+</method>
+<method selector='headingStatus'>
+<retval type='I' type64='Q' declared_type='CDVHeadingStatus'/>
+</method>
+<method selector='headingTimestamp'>
+<retval type='@' declared_type='NSDate*'/>
+</method>
+<method selector='setHeadingCallbacks:'>
+<arg name='headingCallbacks' type='@' declared_type='NSMutableArray*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setHeadingFilter:'>
+<arg name='headingFilter' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setHeadingInfo:'>
+<arg name='headingInfo' type='@' declared_type='CLHeading*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setHeadingStatus:'>
+<arg name='headingStatus' type='I' type64='Q' declared_type='CDVHeadingStatus' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setHeadingTimestamp:'>
+<arg name='headingTimestamp' type='@' declared_type='NSDate*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTimeout:'>
+<arg name='timeout' type='i' type64='q' declared_type='NSInteger' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='timeout'>
+<retval type='i' type64='q' declared_type='NSInteger'/>
+</method>
+</class>
+<class name='CDVImagePicker'>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='mimeType'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='quality'>
+<retval type='i' type64='q' declared_type='NSInteger'/>
+</method>
+<method selector='setCallbackId:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMimeType:'>
+<arg name='mimeType' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setQuality:'>
+<arg name='quality' type='i' type64='q' declared_type='NSInteger' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVInAppBrowser'>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='close:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='inAppBrowserViewController'>
+<retval type='@' declared_type='CDVInAppBrowserViewController*'/>
+</method>
+<method selector='injectScriptCode:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='open:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCallbackId:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setInAppBrowserViewController:'>
+<arg name='inAppBrowserViewController' type='@' declared_type='CDVInAppBrowserViewController*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='show:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVInAppBrowserOptions'>
+<method selector='allowinlinemediaplayback'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='closebuttoncaption'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='enableviewportscale'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='hidden'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='keyboarddisplayrequiresuseraction'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='location'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='mediaplaybackrequiresuseraction'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method class_method='true' selector='parseOptions:'>
+<arg name='options' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='CDVInAppBrowserOptions*'/>
+</method>
+<method selector='presentationstyle'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='setAllowinlinemediaplayback:'>
+<arg name='allowinlinemediaplayback' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setClosebuttoncaption:'>
+<arg name='closebuttoncaption' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setEnableviewportscale:'>
+<arg name='enableviewportscale' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setHidden:'>
+<arg name='hidden' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setKeyboarddisplayrequiresuseraction:'>
+<arg name='keyboarddisplayrequiresuseraction' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLocation:'>
+<arg name='location' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMediaplaybackrequiresuseraction:'>
+<arg name='mediaplaybackrequiresuseraction' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setPresentationstyle:'>
+<arg name='presentationstyle' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSuppressesincrementalrendering:'>
+<arg name='suppressesincrementalrendering' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setToolbar:'>
+<arg name='toolbar' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setTransitionstyle:'>
+<arg name='transitionstyle' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='suppressesincrementalrendering'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='toolbar'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='transitionstyle'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='CDVInAppBrowserViewController'>
+<method selector='addressLabel'>
+<retval type='@' declared_type='UILabel*'/>
+</method>
+<method selector='backButton'>
+<retval type='@' declared_type='UIBarButtonItem*'/>
+</method>
+<method selector='close'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='closeButton'>
+<retval type='@' declared_type='UIBarButtonItem*'/>
+</method>
+<method selector='currentURL'>
+<retval type='@' declared_type='NSURL*'/>
+</method>
+<method selector='forwardButton'>
+<retval type='@' declared_type='UIBarButtonItem*'/>
+</method>
+<method selector='initWithUserAgent:prevUserAgent:'>
+<arg name='userAgent' type='@' declared_type='NSString*' index='0'/>
+<arg name='prevUserAgent' type='@' declared_type='NSString*' index='1'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='navigateTo:'>
+<arg name='url' type='@' declared_type='NSURL*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='navigationDelegate'>
+<retval type='@' declared_type='CDVInAppBrowser*'/>
+</method>
+<method selector='orientationDelegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='setAddressLabel:'>
+<arg name='addressLabel' type='@' declared_type='UILabel*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setBackButton:'>
+<arg name='backButton' type='@' declared_type='UIBarButtonItem*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCloseButton:'>
+<arg name='closeButton' type='@' declared_type='UIBarButtonItem*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCloseButtonTitle:'>
+<arg name='title' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCurrentURL:'>
+<arg name='currentURL' type='@' declared_type='NSURL*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setForwardButton:'>
+<arg name='forwardButton' type='@' declared_type='UIBarButtonItem*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setNavigationDelegate:'>
+<arg name='navigationDelegate' type='@' declared_type='CDVInAppBrowser*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setOrientationDelegate:'>
+<arg name='orientationDelegate' type='@' declared_type='id' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSpinner:'>
+<arg name='spinner' type='@' declared_type='UIActivityIndicatorView*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setToolbar:'>
+<arg name='toolbar' type='@' declared_type='UIToolbar*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setWebView:'>
+<arg name='webView' type='@' declared_type='UIWebView*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='showLocationBar:'>
+<arg name='show' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='showToolBar:'>
+<arg name='show' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='spinner'>
+<retval type='@' declared_type='UIActivityIndicatorView*'/>
+</method>
+<method selector='toolbar'>
+<retval type='@' declared_type='UIToolbar*'/>
+</method>
+<method selector='webView'>
+<retval type='@' declared_type='UIWebView*'/>
+</method>
+</class>
+<class name='CDVInvokedUrlCommand'>
+<method selector='argumentAtIndex:'>
+<arg name='index' type='I' type64='Q' declared_type='NSUInteger' index='0'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='argumentAtIndex:withDefault:'>
+<arg name='index' type='I' type64='Q' declared_type='NSUInteger' index='0'/>
+<arg name='defaultValue' type='@' declared_type='id' index='1'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='argumentAtIndex:withDefault:andClass:'>
+<arg name='index' type='I' type64='Q' declared_type='NSUInteger' index='0'/>
+<arg name='defaultValue' type='@' declared_type='id' index='1'/>
+<arg name='aClass' type='#' declared_type='Class' index='2'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='arguments'>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='className'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='commandFromJson:'>
+<arg name='jsonEntry' type='@' declared_type='NSArray*' index='0'/>
+<retval type='@' declared_type='CDVInvokedUrlCommand*'/>
+</method>
+<method selector='initFromJson:'>
+<arg name='jsonEntry' type='@' declared_type='NSArray*' index='0'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='initWithArguments:callbackId:className:methodName:'>
+<arg name='arguments' type='@' declared_type='NSArray*' index='0'/>
+<arg name='callbackId' type='@' declared_type='NSString*' index='1'/>
+<arg name='className' type='@' declared_type='NSString*' index='2'/>
+<arg name='methodName' type='@' declared_type='NSString*' index='3'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='methodName'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='CDVJpegHeaderWriter'>
+<method selector='continuedFraction:withFractionList:withHorizon:'>
+<arg name='val' type='d' declared_type='double' index='0'/>
+<arg name='fractionlist' type='@' declared_type='NSMutableArray*' index='1'/>
+<arg name='horizon' type='i' declared_type='int' index='2'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='createExifAPP1:'>
+<arg name='datadict' type='@' declared_type='NSDictionary*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='decimalToUnsignedRational:withResultNumerator:withResultDenominator:'>
+<arg name='numb' type='@' declared_type='NSNumber*' index='0'/>
+<arg name='numerator' type='^@' declared_type='NSNumber**' index='1'/>
+<arg name='denominator' type='^@' declared_type='NSNumber**' index='2'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='formatNumberWithLeadingZeroes:withPlaces:'>
+<arg name='numb' type='@' declared_type='NSNumber*' index='0'/>
+<arg name='places' type='@' declared_type='NSNumber*' index='1'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='formatRationalWithNumerator:withDenominator:asSigned:'>
+<arg name='numerator' type='@' declared_type='NSNumber*' index='0'/>
+<arg name='denominator' type='@' declared_type='NSNumber*' index='1'/>
+<arg name='signedFlag' type='B' declared_type='Boolean' index='2'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='formattedHexStringFromDecimalNumber:withPlaces:'>
+<arg name='numb' type='@' declared_type='NSNumber*' index='0'/>
+<arg name='width' type='@' declared_type='NSNumber*' index='1'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='hexStringFromData:'>
+<arg name='data' type='@' declared_type='NSData*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='numericFromHexString:'>
+<arg name='hexstring' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSNumber*'/>
+</method>
+<method selector='spliceExifBlockIntoJpeg:withExifBlock:'>
+<arg name='jpegdata' type='@' declared_type='NSData*' index='0'/>
+<arg name='exifstr' type='@' declared_type='NSString*' index='1'/>
+<retval type='@' declared_type='NSData*'/>
+</method>
+<method selector='splitDouble:withIntComponent:withFloatRemainder:'>
+<arg name='val' type='d' declared_type='double' index='0'/>
+<arg name='rightside' type='^i' declared_type='int*' index='1'/>
+<arg name='leftside' type='^d' declared_type='double*' index='2'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVLocalStorage'>
+<method class_method='true' selector='__fixupDatabaseLocationsWithBackupType:'>
+<arg name='backupType' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='__verifyAndFixDatabaseLocationsWithAppPlistDict:bundlePath:fileManager:'>
+<arg name='appPlistDict' type='@' declared_type='NSMutableDictionary*' index='0'/>
+<arg name='bundlePath' type='@' declared_type='NSString*' index='1'/>
+<arg name='fileManager' type='@' declared_type='NSFileManager*' index='2'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='backup:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='backupInfo'>
+<retval type='@' declared_type='NSMutableArray*'/>
+</method>
+<method selector='restore:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='shouldBackup'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='shouldRestore'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+</class>
+<class name='CDVLocation'>
+<method selector='addWatch:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='clearWatch:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='getLocation:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='isLocationServicesEnabled'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='locationData'>
+<retval type='@' declared_type='CDVLocationData*'/>
+</method>
+<method selector='locationManager'>
+<retval type='@' declared_type='CLLocationManager*'/>
+</method>
+<method selector='locationManager:didFailWithError:'>
+<arg name='manager' type='@' declared_type='CLLocationManager*' index='0'/>
+<arg name='error' type='@' declared_type='NSError*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='locationManager:didUpdateToLocation:fromLocation:'>
+<arg name='manager' type='@' declared_type='CLLocationManager*' index='0'/>
+<arg name='newLocation' type='@' declared_type='CLLocation*' index='1'/>
+<arg name='oldLocation' type='@' declared_type='CLLocation*' index='2'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='returnLocationError:withMessage:'>
+<arg name='errorCode' type='I' type64='Q' declared_type='NSUInteger' index='0'/>
+<arg name='message' type='@' declared_type='NSString*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='returnLocationInfo:andKeepCallback:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<arg name='keepCallback' type='B' declared_type='BOOL' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLocationData:'>
+<arg name='locationData' type='@' declared_type='CDVLocationData*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLocationManager:'>
+<arg name='locationManager' type='@' declared_type='CLLocationManager*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='startLocation:'>
+<arg name='enableHighAccuracy' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVLocationData'>
+<method selector='locationCallbacks'>
+<retval type='@' declared_type='NSMutableArray*'/>
+</method>
+<method selector='locationInfo'>
+<retval type='@' declared_type='CLLocation*'/>
+</method>
+<method selector='locationStatus'>
+<retval type='I' type64='Q' declared_type='CDVLocationStatus'/>
+</method>
+<method selector='setLocationCallbacks:'>
+<arg name='locationCallbacks' type='@' declared_type='NSMutableArray*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLocationInfo:'>
+<arg name='locationInfo' type='@' declared_type='CLLocation*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setLocationStatus:'>
+<arg name='locationStatus' type='I' type64='Q' declared_type='CDVLocationStatus' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setWatchCallbacks:'>
+<arg name='watchCallbacks' type='@' declared_type='NSMutableDictionary*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='watchCallbacks'>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+</class>
+<class name='CDVLogger'>
+<method selector='logLevel:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVNewContactsController'>
+<method selector='callbackId'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='setCallbackId:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVNotification'>
+<method selector='alert:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='beep:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='confirm:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='prompt:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVPlugin'>
+<method selector='appDelegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='commandDelegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='dispose'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='error:callbackId:'>
+<arg name='pluginResult' type='@' declared_type='CDVPluginResult*' index='0'/>
+<arg name='callbackId' type='@' declared_type='NSString*' index='1'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='handleOpenURL:'>
+<arg name='notification' type='@' declared_type='NSNotification*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='hasPendingOperation'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='initWithWebView:'>
+<arg name='theWebView' type='@' declared_type='UIWebView*' index='0'/>
+<retval type='@' declared_type='CDVPlugin*'/>
+</method>
+<method selector='onAppTerminate'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='onMemoryWarning'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='onReset'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='pluginInitialize'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setCommandDelegate:'>
+<arg name='commandDelegate' type='@' declared_type='id' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setViewController:'>
+<arg name='viewController' type='@' declared_type='UIViewController*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setWebView:'>
+<arg name='webView' type='@' declared_type='UIWebView*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='success:callbackId:'>
+<arg name='pluginResult' type='@' declared_type='CDVPluginResult*' index='0'/>
+<arg name='callbackId' type='@' declared_type='NSString*' index='1'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='viewController'>
+<retval type='@' declared_type='UIViewController*'/>
+</method>
+<method selector='webView'>
+<retval type='@' declared_type='UIWebView*'/>
+</method>
+<method selector='writeJavascript:'>
+<arg name='javascript' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='CDVPluginResult'>
+<method selector='argumentsAsJSON'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='associatedObject'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='init'>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method class_method='true' selector='isVerbose'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='keepCallback'>
+<retval type='@' declared_type='NSNumber*'/>
+</method>
+<method selector='message'>
+<retval type='@' declared_type='id'/>
+</method>
+<method class_method='true' selector='resultWithStatus:'>
+<arg name='statusOrdinal' type='i' declared_type='CDVCommandStatus' index='0'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method class_method='true' selector='resultWithStatus:messageAsArray:'>
+<arg name='statusOrdinal' type='i' declared_type='CDVCommandStatus' index='0'/>
+<arg name='theMessage' type='@' declared_type='NSArray*' index='1'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method class_method='true' selector='resultWithStatus:messageAsArrayBuffer:'>
+<arg name='statusOrdinal' type='i' declared_type='CDVCommandStatus' index='0'/>
+<arg name='theMessage' type='@' declared_type='NSData*' index='1'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method class_method='true' selector='resultWithStatus:messageAsBool:'>
+<arg name='statusOrdinal' type='i' declared_type='CDVCommandStatus' index='0'/>
+<arg name='theMessage' type='B' declared_type='BOOL' index='1'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method class_method='true' selector='resultWithStatus:messageAsDictionary:'>
+<arg name='statusOrdinal' type='i' declared_type='CDVCommandStatus' index='0'/>
+<arg name='theMessage' type='@' declared_type='NSDictionary*' index='1'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method class_method='true' selector='resultWithStatus:messageAsDouble:'>
+<arg name='statusOrdinal' type='i' declared_type='CDVCommandStatus' index='0'/>
+<arg name='theMessage' type='d' declared_type='double' index='1'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method class_method='true' selector='resultWithStatus:messageAsInt:'>
+<arg name='statusOrdinal' type='i' declared_type='CDVCommandStatus' index='0'/>
+<arg name='theMessage' type='i' declared_type='int' index='1'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method class_method='true' selector='resultWithStatus:messageAsMultipart:'>
+<arg name='statusOrdinal' type='i' declared_type='CDVCommandStatus' index='0'/>
+<arg name='theMessages' type='@' declared_type='NSArray*' index='1'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method class_method='true' selector='resultWithStatus:messageAsString:'>
+<arg name='statusOrdinal' type='i' declared_type='CDVCommandStatus' index='0'/>
+<arg name='theMessage' type='@' declared_type='NSString*' index='1'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method class_method='true' selector='resultWithStatus:messageToErrorObject:'>
+<arg name='statusOrdinal' type='i' declared_type='CDVCommandStatus' index='0'/>
+<arg name='errorCode' type='i' declared_type='int' index='1'/>
+<retval type='@' declared_type='CDVPluginResult*'/>
+</method>
+<method selector='setAssociatedObject:'>
+<arg name='associatedObject' type='@' declared_type='id' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setKeepCallback:'>
+<arg name='keepCallback' type='@' declared_type='NSNumber*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setKeepCallbackAsBool:'>
+<arg name='bKeepCallback' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setMessage:'>
+<arg name='message' type='@' declared_type='id' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setStatus:'>
+<arg name='status' type='@' declared_type='NSNumber*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='setVerbose:'>
+<arg name='verbose' type='B' declared_type='BOOL' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='status'>
+<retval type='@' declared_type='NSNumber*'/>
+</method>
+<method selector='toErrorCallbackString:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='toJSONString'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='toSuccessCallbackString:'>
+<arg name='callbackId' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='CDVReachability'>
+<method selector='connectionRequired'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='currentReachabilityStatus'>
+<retval type='i' declared_type='NetworkStatus'/>
+</method>
+<method class_method='true' selector='reachabilityForInternetConnection'>
+<retval type='@' declared_type='CDVReachability*'/>
+</method>
+<method class_method='true' selector='reachabilityForLocalWiFi'>
+<retval type='@' declared_type='CDVReachability*'/>
+</method>
+<method class_method='true' selector='reachabilityWithAddress:'>
+<arg name='hostAddress' type='^{sockaddr_in=CCS{in_addr=I}[8c]}' const='true' declared_type='struct sockaddr_in*' index='0'/>
+<retval type='@' declared_type='CDVReachability*'/>
+</method>
+<method class_method='true' selector='reachabilityWithHostName:'>
+<arg name='hostName' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='CDVReachability*'/>
+</method>
+<method selector='startNotifier'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='stopNotifier'>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVSound'>
+<method selector='audioFileForResource:withId:'>
+<arg name='resourcePath' type='@' declared_type='NSString*' index='0'/>
+<arg name='mediaId' type='@' declared_type='NSString*' index='1'/>
+<retval type='@' declared_type='CDVAudioFile*'/>
+</method>
+<method selector='audioFileForResource:withId:doValidation:forRecording:'>
+<arg name='resourcePath' type='@' declared_type='NSString*' index='0'/>
+<arg name='mediaId' type='@' declared_type='NSString*' index='1'/>
+<arg name='bValidate' type='B' declared_type='BOOL' index='2'/>
+<arg name='bRecord' type='B' declared_type='BOOL' index='3'/>
+<retval type='@' declared_type='CDVAudioFile*'/>
+</method>
+<method selector='avSession'>
+<retval type='@' declared_type='AVAudioSession*'/>
+</method>
+<method selector='createMediaErrorWithCode:message:'>
+<arg name='code' type='I' type64='Q' declared_type='CDVMediaError' index='0'/>
+<arg name='message' type='@' declared_type='NSString*' index='1'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='getCurrentPositionAudio:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='hasAudioSession'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='pausePlayingAudio:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='prepareToPlay:withId:'>
+<arg name='audioFile' type='@' declared_type='CDVAudioFile*' index='0'/>
+<arg name='mediaId' type='@' declared_type='NSString*' index='1'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='release:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='seekToAudio:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setAvSession:'>
+<arg name='avSession' type='@' declared_type='AVAudioSession*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setSoundCache:'>
+<arg name='soundCache' type='@' declared_type='NSMutableDictionary*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setVolume:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='soundCache'>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='startPlayingAudio:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='startRecordingAudio:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='stopPlayingAudio:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='stopRecordingAudio:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='urlForPlaying:'>
+<arg name='resourcePath' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSURL*'/>
+</method>
+<method selector='urlForRecording:'>
+<arg name='resourcePath' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSURL*'/>
+</method>
+<method selector='urlForResource:'>
+<arg name='resourcePath' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSURL*'/>
+</method>
+</class>
+<class name='CDVSplashScreen'>
+<method selector='hide:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='show:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVTimer'>
+<method class_method='true' selector='start:'>
+<arg name='name' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='stop:'>
+<arg name='name' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVURLProtocol'>
+<method class_method='true' selector='registerViewController:'>
+<arg name='viewController' type='@' declared_type='CDVViewController*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='unregisterViewController:'>
+<arg name='viewController' type='@' declared_type='CDVViewController*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVUserAgentUtil'>
+<method class_method='true' selector='acquireLock:'>
+<arg name='block' type='@?' function_pointer='true' declared_type='void (^)(NSInteger)' index='0'>
+<arg type='i' type64='q' declared_type='NSInteger'/>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='originalUserAgent'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='releaseLock:'>
+<arg name='lockToken' type='^i' type64='^q' declared_type='NSInteger*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='setUserAgent:lockToken:'>
+<arg name='value' type='@' declared_type='NSString*' index='0'/>
+<arg name='lockToken' type='i' type64='q' declared_type='NSInteger' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVVibration'>
+<method selector='vibrate:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+</class>
+<class name='CDVViewController'>
+<method selector='URLisAllowed:'>
+<arg name='url' type='@' declared_type='NSURL*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='appURLScheme'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='applicationDocumentsDirectory'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='commandDelegate'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='commandQueue'>
+<retval type='@' declared_type='CDVCommandQueue*'/>
+</method>
+<method selector='configParser'>
+<retval type='@' declared_type='NSXMLParser*'/>
+</method>
+<method selector='createGapView'>
+<retval type='v' declared_type='void'/>
+</method>
+<method class_method='true' selector='getBundlePlist:'>
+<arg name='plistName' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='getCommandInstance:'>
+<arg name='pluginName' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='javascriptAlert:'>
+<arg name='text' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='loadFromString'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='newCordovaViewWithFrame:'>
+<arg name='bounds' type='{CGRect={CGPoint=ff}{CGSize=ff}}' type64='{CGRect={CGPoint=dd}{CGSize=dd}}' declared_type='CGRect' index='0'/>
+<retval type='@' declared_type='UIWebView*'/>
+</method>
+<method selector='parseInterfaceOrientations:'>
+<arg name='orientations' type='@' declared_type='NSArray*' index='0'/>
+<retval type='@' declared_type='NSArray*'/>
+</method>
+<method selector='pluginObjects'>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='pluginsMap'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='printMultitaskingInfo'>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='registerPlugin:withClassName:'>
+<arg name='plugin' type='@' declared_type='CDVPlugin*' index='0'/>
+<arg name='className' type='@' declared_type='NSString*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='registerPlugin:withPluginName:'>
+<arg name='plugin' type='@' declared_type='CDVPlugin*' index='0'/>
+<arg name='pluginName' type='@' declared_type='NSString*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setStartPage:'>
+<arg name='startPage' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setWebView:'>
+<arg name='webView' type='@' declared_type='UIWebView*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='setWwwFolderName:'>
+<arg name='wwwFolderName' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='settings'>
+<retval type='@' declared_type='NSMutableDictionary*'/>
+</method>
+<method selector='startPage'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='supportsOrientation:'>
+<arg name='orientation' type='i' type64='q' declared_type='UIInterfaceOrientation' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='userAgent'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='webView'>
+<retval type='@' declared_type='UIWebView*'/>
+</method>
+<method selector='whitelist'>
+<retval type='@' declared_type='CDVWhitelist*'/>
+</method>
+<method selector='wwwFolderName'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='CDVWebViewDelegate'>
+<method selector='initWithDelegate:'>
+<arg name='delegate' type='@' declared_type='NSObject*' index='0'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='request:isFragmentIdentifierToRequest:'>
+<arg name='newRequest' type='@' declared_type='NSURLRequest*' index='0'/>
+<arg name='originalRequest' type='@' declared_type='NSURLRequest*' index='1'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+</class>
+<class name='CDVWhitelist'>
+<method selector='URLIsAllowed:'>
+<arg name='url' type='@' declared_type='NSURL*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='URLIsAllowed:logFailure:'>
+<arg name='url' type='@' declared_type='NSURL*' index='0'/>
+<arg name='logFailure' type='B' declared_type='BOOL' index='1'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='errorStringForURL:'>
+<arg name='url' type='@' declared_type='NSURL*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='initWithArray:'>
+<arg name='array' type='@' declared_type='NSArray*' index='0'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='schemeIsAllowed:'>
+<arg name='scheme' type='@' declared_type='NSString*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='setWhitelistRejectionFormatString:'>
+<arg name='whitelistRejectionFormatString' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='whitelistRejectionFormatString'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='CLLocation'>
+<method selector='JSONRepresentation'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='NSArray'>
+<method selector='JSONString'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='objectAtIndex:withDefault:'>
+<arg name='index' type='I' type64='Q' declared_type='NSUInteger' index='0'/>
+<arg name='aDefault' type='@' declared_type='id' index='1'/>
+<retval type='@' declared_type='id'/>
+</method>
+</class>
+<class name='NSData'>
+<method selector='base64EncodedString'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method class_method='true' selector='dataFromBase64String:'>
+<arg name='aString' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSData*'/>
+</method>
+</class>
+<class name='NSDictionary'>
+<method selector='JSONString'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='dictionaryWithLowercaseKeys'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='existsValue:forKey:'>
+<arg name='expectedValue' type='@' declared_type='NSString*' index='0'/>
+<arg name='key' type='@' declared_type='NSString*' index='1'/>
+<retval type='B' declared_type='_Bool'/>
+</method>
+<method selector='integerValueForKey:defaultValue:'>
+<arg name='key' type='@' declared_type='NSString*' index='0'/>
+<arg name='defaultValue' type='i' type64='q' declared_type='NSInteger' index='1'/>
+<retval type='i' type64='q' declared_type='NSInteger'/>
+</method>
+<method selector='integerValueForKey:defaultValue:withRange:'>
+<arg name='key' type='@' declared_type='NSString*' index='0'/>
+<arg name='defaultValue' type='i' type64='q' declared_type='NSInteger' index='1'/>
+<arg name='range' type='{_NSRange=II}' type64='{_NSRange=QQ}' declared_type='NSRange' index='2'/>
+<retval type='i' type64='q' declared_type='NSInteger'/>
+</method>
+<method selector='typeValueForKey:isArray:isNull:isNumber:isString:'>
+<arg name='key' type='@' declared_type='NSString*' index='0'/>
+<arg name='bArray' type='^B' declared_type='BOOL*' index='1'/>
+<arg name='bNull' type='^B' declared_type='BOOL*' index='2'/>
+<arg name='bNumber' type='^B' declared_type='BOOL*' index='3'/>
+<arg name='bString' type='^B' declared_type='BOOL*' index='4'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='valueForKeyIsArray:'>
+<arg name='key' type='@' declared_type='NSString*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='valueForKeyIsNull:'>
+<arg name='key' type='@' declared_type='NSString*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='valueForKeyIsNumber:'>
+<arg name='key' type='@' declared_type='NSString*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='valueForKeyIsString:'>
+<arg name='key' type='@' declared_type='NSString*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+</class>
+<class name='NSError'>
+<method selector='JSONRepresentation'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='NSMutableArray'>
+<method selector='dequeue'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='enqueue:'>
+<arg name='obj' type='@' declared_type='id' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='pop'>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='queueHead'>
+<retval type='@' declared_type='id'/>
+</method>
+</class>
+<class name='NSObject'>
+<method selector='URLIsWhitelisted:'>
+<arg name='url' type='@' declared_type='NSURL*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='evalJs:'>
+<arg name='js' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='evalJs:scheduledOnRunLoop:'>
+<arg name='js' type='@' declared_type='NSString*' index='0'/>
+<arg name='scheduledOnRunLoop' type='B' declared_type='BOOL' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='execute:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='getCommandInstance:'>
+<arg name='pluginName' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method selector='pathForResource:'>
+<arg name='resourcepath' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method selector='runInBackground:'>
+<arg name='block' type='@?' function_pointer='true' declared_type='void (^)()' index='0'>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='sendPluginResult:callbackId:'>
+<arg name='result' type='@' declared_type='CDVPluginResult*' index='0'/>
+<arg name='callbackId' type='@' declared_type='NSString*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method selector='settings'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method selector='shouldAutorotate'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='shouldAutorotateToInterfaceOrientation:'>
+<arg name='interfaceOrientation' type='i' type64='q' declared_type='UIInterfaceOrientation' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method selector='supportedInterfaceOrientations'>
+<retval type='I' type64='Q' declared_type='NSUInteger'/>
+</method>
+<method selector='userAgent'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<class name='NSString'>
+<method selector='JSONObject'>
+<retval type='@' declared_type='id'/>
+</method>
+</class>
+<class name='UIDevice'>
+<method selector='uniqueAppInstanceIdentifier'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</class>
+<informal_protocol name='CDVCommandDelegate'>
+<method type='B12@0:4@8' type64='B24@0:8@16' selector='URLIsWhitelisted:'>
+<arg name='url' type='@' declared_type='NSURL*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method type='v12@0:4@8' type64='v24@0:8@16' selector='evalJs:'>
+<arg name='js' type='@' declared_type='NSString*' index='0'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v16@0:4@8B12' type64='v28@0:8@16B24' selector='evalJs:scheduledOnRunLoop:'>
+<arg name='js' type='@' declared_type='NSString*' index='0'/>
+<arg name='scheduledOnRunLoop' type='B' declared_type='BOOL' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='B12@0:4@8' type64='B24@0:8@16' selector='execute:'>
+<arg name='command' type='@' declared_type='CDVInvokedUrlCommand*' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method type='@12@0:4@8' type64='@24@0:8@16' selector='getCommandInstance:'>
+<arg name='pluginName' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='id'/>
+</method>
+<method type='@12@0:4@8' type64='@24@0:8@16' selector='pathForResource:'>
+<arg name='resourcepath' type='@' declared_type='NSString*' index='0'/>
+<retval type='@' declared_type='NSString*'/>
+</method>
+<method type='v12@0:4@?8' type64='v24@0:8@?16' selector='runInBackground:'>
+<arg name='block' type='@?' function_pointer='true' declared_type='void (^)()' index='0'>
+<retval type='v' declared_type='void'/>
+</arg>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='v16@0:4@8@12' type64='v32@0:8@16@24' selector='sendPluginResult:callbackId:'>
+<arg name='result' type='@' declared_type='CDVPluginResult*' index='0'/>
+<arg name='callbackId' type='@' declared_type='NSString*' index='1'/>
+<retval type='v' declared_type='void'/>
+</method>
+<method type='@8@0:4' type64='@16@0:8' selector='settings'>
+<retval type='@' declared_type='NSDictionary*'/>
+</method>
+<method type='@8@0:4' type64='@16@0:8' selector='userAgent'>
+<retval type='@' declared_type='NSString*'/>
+</method>
+</informal_protocol>
+<informal_protocol name='CDVScreenOrientationDelegate'>
+<method type='B8@0:4' type64='B16@0:8' selector='shouldAutorotate'>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method type='B12@0:4i8' type64='B24@0:8q16' selector='shouldAutorotateToInterfaceOrientation:'>
+<arg name='interfaceOrientation' type='i' type64='q' declared_type='UIInterfaceOrientation' index='0'/>
+<retval type='B' declared_type='BOOL'/>
+</method>
+<method type='I8@0:4' type64='Q16@0:8' selector='supportedInterfaceOrientations'>
+<retval type='I' type64='Q' declared_type='NSUInteger'/>
+</method>
+</informal_protocol>
+</signatures>

@@ -1,0 +1,134 @@
+
+// To check if a library is compiled with CocoaPods you
+// can use the `COCOAPODS` macro definition which is
+// defined in the xcconfigs so it is available in
+// headers also when they are imported in the client
+// project.
+
+
+// Cordova
+#define COCOAPODS_POD_AVAILABLE_Cordova
+#define COCOAPODS_VERSION_MAJOR_Cordova 3
+#define COCOAPODS_VERSION_MINOR_Cordova 1
+#define COCOAPODS_VERSION_PATCH_Cordova 0
+
+// Cordova/Base
+#define COCOAPODS_POD_AVAILABLE_Cordova_Base
+#define COCOAPODS_VERSION_MAJOR_Cordova_Base 3
+#define COCOAPODS_VERSION_MINOR_Cordova_Base 1
+#define COCOAPODS_VERSION_PATCH_Cordova_Base 0
+
+// Cordova/Plugins/File
+#define COCOAPODS_POD_AVAILABLE_Cordova_Plugins_File
+#define COCOAPODS_VERSION_MAJOR_Cordova_Plugins_File 3
+#define COCOAPODS_VERSION_MINOR_Cordova_Plugins_File 1
+#define COCOAPODS_VERSION_PATCH_Cordova_Plugins_File 0
+
+// CordovaPlugin-battery-status
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_battery_status
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_battery_status 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_battery_status 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_battery_status 3
+
+// CordovaPlugin-camera
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_camera
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_camera 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_camera 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_camera 3
+
+// CordovaPlugin-console
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_console
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_console 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_console 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_console 5
+
+// CordovaPlugin-contacts
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_contacts
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_contacts 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_contacts 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_contacts 4
+
+// CordovaPlugin-device
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_device
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_device 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_device 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_device 5
+
+// CordovaPlugin-device-motion
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_device_motion
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_device_motion 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_device_motion 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_device_motion 2
+
+// CordovaPlugin-device-orientation
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_device_orientation
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_device_orientation 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_device_orientation 3
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_device_orientation 1
+
+// CordovaPlugin-dialogs
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_dialogs
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_dialogs 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_dialogs 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_dialogs 4
+
+// CordovaPlugin-file
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_file
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_file 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_file 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_file 4
+
+// CordovaPlugin-file-transfer
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_file_transfer
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_file_transfer 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_file_transfer 3
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_file_transfer 3
+
+// CordovaPlugin-geolocation
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_geolocation
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_geolocation 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_geolocation 3
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_geolocation 2
+
+// CordovaPlugin-globalization
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_globalization
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_globalization 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_globalization 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_globalization 4
+
+// CordovaPlugin-inappbrowser
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_inappbrowser
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_inappbrowser 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_inappbrowser 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_inappbrowser 5
+
+// CordovaPlugin-media
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_media
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_media 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_media 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_media 4
+
+// CordovaPlugin-media-capture
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_media_capture
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_media_capture 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_media_capture 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_media_capture 3
+
+// CordovaPlugin-network-information
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_network_information
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_network_information 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_network_information 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_network_information 3
+
+// CordovaPlugin-splashscreen
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_splashscreen
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_splashscreen 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_splashscreen 2
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_splashscreen 5
+
+// CordovaPlugin-vibration
+#define COCOAPODS_POD_AVAILABLE_CordovaPlugin_vibration
+#define COCOAPODS_VERSION_MAJOR_CordovaPlugin_vibration 0
+#define COCOAPODS_VERSION_MINOR_CordovaPlugin_vibration 3
+#define COCOAPODS_VERSION_PATCH_CordovaPlugin_vibration 3
+

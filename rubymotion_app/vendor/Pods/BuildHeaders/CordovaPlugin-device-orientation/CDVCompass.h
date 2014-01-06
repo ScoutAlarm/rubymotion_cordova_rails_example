@@ -1,0 +1,1 @@
+../../CordovaPlugin-device-orientation/src/ios/CDVCompass.h

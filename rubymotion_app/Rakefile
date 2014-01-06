@@ -1,0 +1,25 @@
+# -*- coding: utf-8 -*-
+$:.unshift("/Library/RubyMotion/lib")
+require 'motion/project/template/ios'
+
+begin
+  require 'bundler'
+  Bundler.require
+rescue LoadError
+end
+
+Motion::Project::App.setup do |app|
+  # Use `rake config' to see complete project settings.
+  app.name = 'rubymotion_app'
+
+  app.pods do
+    pod 'Cordova', '3.1.0'
+    %w(battery-status camera console contacts device device-motion
+      device-orientation dialogs file file-transfer geolocation globalization
+      inappbrowser media media-capture network-information
+      splashscreen vibration).each do |plugin|
+      pod "CordovaPlugin-#{plugin}"
+    end
+  end
+
+end

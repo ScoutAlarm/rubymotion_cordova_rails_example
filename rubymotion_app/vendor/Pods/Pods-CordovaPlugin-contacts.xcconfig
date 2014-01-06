@@ -1,0 +1,1 @@
+PODS_CORDOVAPLUGIN_CONTACTS_OTHER_LDFLAGS = -framework CoreGraphics -weak_framework AddressBook -weak_framework AddressBookUI
